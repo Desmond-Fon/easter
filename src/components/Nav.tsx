@@ -5,7 +5,7 @@ import tools from "../assets/Dextool.svg";
 import screener from "../assets/Dexscreener.svg";
 import { NavHashLink } from "react-router-hash-link";
 import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
@@ -41,12 +41,24 @@ const Nav = () => {
             Buy Now!
           </button>
           <div className="hidden lg:flex justify-center items-center gap-2 h-full w-full">
-            <img src={x} alt="" className="h-[32px] w-[32px] object-cover" />
-            <img
-              src={telegram}
-              alt=""
-              className="h-[32px] object-cover w-[32px]"
-            />
+            <Link
+              to={"https://x.com/easterrewards?s=21"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={x} alt="" className="h-[32px] w-[32px] object-cover" />
+            </Link>
+            <Link
+              to="https://t.me/EasterRewards"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={telegram}
+                alt=""
+                className="h-[32px] object-cover w-[32px]"
+              />
+            </Link>
             <img
               src={tools}
               alt=""
@@ -83,16 +95,20 @@ const Nav = () => {
             </NavHashLink>{" "}
             <div className="flex gap-[10px] items-center py-[12px] rounded-[14px]">
               <div className="flex justify-center items-center gap-2 h-full w-full">
-                <img
-                  src={x}
-                  alt=""
-                  className="h-[32px] w-[32px] object-cover"
-                />
-                <img
-                  src={telegram}
-                  alt=""
-                  className="h-[32px] object-cover w-[32px]"
-                />
+                <Link to={"https://x.com/easterrewards?s=21"} target="_blank" rel="noreferrer">
+                  <img
+                    src={x}
+                    alt=""
+                    className="h-[32px] w-[32px] object-cover"
+                  />
+                </Link>
+                <Link to={"https://t.me/EasterRewards"} target="_blank" rel="noreferrer">
+                  <img
+                    src={telegram}
+                    alt=""
+                    className="h-[32px] object-cover w-[32px]"
+                  />
+                </Link>
                 <img
                   src={tools}
                   alt=""
