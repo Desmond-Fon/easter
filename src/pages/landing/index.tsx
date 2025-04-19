@@ -98,14 +98,11 @@ const Landing = () => {
               <div className="border-[3px] mt-2 lg:mt-0 lg:border-[6px] border-[#0D3157] rounded-[10px] lg:rounded-[28px] bg-white py-[30px] px-[20px] transform rotate-2 origin-center w-[85%] min-[1724px]:w-[90%]">
                 <div className="transform -rotate-7 origin-center">
                   <p className="text-[12px] lg:text-[20px] min-[1724px]:text-[25px] text-[#0D3157] font-[700] text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    obcaecati iste quibusdam minima deserunt voluptas provident
-                    nihil quis sint neque eum velit, temporibus iusto, quod
-                    maiores quisquam, fugit sapiente? Numquam? Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Iste quos in
-                    quam earum accusantium harum eos voluptates minima commodi?
-                    Consequuntur voluptate laudantium ullam vel aliquid magni
-                    debitis voluptas molestiae inventore?
+                    <span className="font-[800]">EasterRewards ($EasterEgg)</span> is the ultimate holiday-themed
+                    memecoin that gives back! Every transaction comes with a 10%
+                    tax—automatically redistributed to holders as sweet rewards.
+                    The longer you hold, the more you earn. It&apos;s not just a
+                    coin… it&apos;s an Easter hunt for passive income!
                   </p>
                 </div>
               </div>
