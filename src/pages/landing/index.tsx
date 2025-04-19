@@ -81,7 +81,7 @@ const Landing = () => {
               <img
                 src={pfp}
                 alt=""
-                className="relative z-0 rounded-[10px] lg:w-full h-full"
+                className="relative z-0 rounded-[10px] lg:w-full"
               />
             </div>
             <div className="flex justify-between flex-col items-center lg:items-start lg:w-1/2 mt-10 min-[1724px]:mt-14 gap-[30px] ">
