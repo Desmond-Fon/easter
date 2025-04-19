@@ -33,11 +33,6 @@ const Nav = () => {
             TOKENOMICS
           </NavHashLink>
         </div>
-        {/* <img
-          src={logo}
-          alt=""
-          className="h-[33px] w-[33px] lg:h-[85px] lg:w-[85px]"
-        /> */}
         <h1 className="naughty text-[#0D3157] hidden lg:block lg:text-[35px] font-[900]">
           EasterRewards
         </h1>
@@ -77,22 +72,6 @@ const Nav = () => {
               className="leading-[18px] comics text-[16px] mid:text-[14px] large:text-[18px]"
             >
               ABOUT
-            </NavHashLink>{" "}
-            <NavHashLink
-              smooth
-              onClick={toggleMenu}
-              to="/#howToBuy"
-              className="leading-[18px] comics text-[16px] mid:text-[14px] large:text-[18px]"
-            >
-              HOW TO BUY
-            </NavHashLink>{" "}
-            <NavHashLink
-              smooth
-              onClick={toggleMenu}
-              to="/#roadmap"
-              className="leading-[18px] comics text-[16px] mid:text-[14px] large:text-[18px]"
-            >
-              ROADMAP
             </NavHashLink>{" "}
             <NavHashLink
               smooth
