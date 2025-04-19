@@ -1,4 +1,3 @@
-import logo from "../assets/LOGO.svg";
 import x from "../assets/X.svg";
 import hamburger from "../assets/hamburger.svg";
 import telegram from "../assets/TELEGRAM.svg";
@@ -17,7 +16,7 @@ const Nav = () => {
   return (
     <>
       <div className="border-black border-[4px] rounded-[20px] py-[10px] px-[30px] lg:px-[100px] min-[1724px]:px-[160px] bg-white whitespace-nowrap flex justify-between items-center gap-[50px] min-[1724px]:gap-[80px]">
-        <div className="hidden lg:flex justify-start items-center gap-[30px] min-[1724px]:gap-[48px]">
+        <div className="hidden text-[#0D3157] lg:flex justify-start items-center gap-[30px] min-[1724px]:gap-[48px]">
           <NavHashLink
             smooth
             to="/#about"
@@ -39,11 +38,11 @@ const Nav = () => {
           alt=""
           className="h-[33px] w-[33px] lg:h-[85px] lg:w-[85px]"
         /> */}
-        <h1 className="naughty text-black hidden lg:block lg:text-[35px] font-[900]">
+        <h1 className="naughty text-[#0D3157] hidden lg:block lg:text-[35px] font-[900]">
           EasterRewards
         </h1>
         <div className="flex justify-start items-center gap-[30px] min-[1724px]:gap-[48px]">
-          <button className="rounded-[114px] bg-black text-white h-[28px] lg:h-[40px] px-[20px] lg:px-[30px] whitespace-nowrap text-[10px] lg:text-[16px]">
+          <button className="rounded-[114px] bg-[#0D3157] text-white h-[28px] lg:h-[40px] px-[20px] lg:px-[30px] whitespace-nowrap text-[10px] lg:text-[16px]">
             Buy Now!
           </button>
           <div className="hidden lg:flex justify-center items-center gap-2 h-full w-full">

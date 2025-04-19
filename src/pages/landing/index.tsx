@@ -1,48 +1,49 @@
 import Nav from "../../components/Nav";
-import workie from "../../assets/Workie main.png";
-import logo from "../../assets/LOGO.svg";
-import img1 from "../../assets/Dexscreener.svg";
-import img2 from "../../assets/Dextool.svg";
+// import workie from "../../assets/Workie main.png";
+import logo from "../../assets/hero.jpg";
+// import img1 from "../../assets/Dexscreener.svg";
+// import img2 from "../../assets/Dextool.svg";
 import pfp from "../../assets/rabbit.jpg";
-import img3 from "../../assets/Dextool (1).svg";
-import ellipse from "../../assets/ellipse.svg";
-import mobEllipse from "../../assets/mobEllipse.svg";
-import mobVec1 from "../../assets/mob1.svg";
-import mobVec2 from "../../assets/mob2.svg";
-import vector1 from "../../assets/Vector 2.png";
-import vector2 from "../../assets/Vector 3.png";
-import dollar1 from "../../assets/dollar1.png";
-import dollar2 from "../../assets/dollar2.png";
-import dollar3 from "../../assets/dollar3.png";
-import slide1 from "../../assets/slide1.png";
-import slide2 from "../../assets/slider3.png";
-import slide3 from "../../assets/slide3.png";
-import slide4 from "../../assets/slide4.png";
-import buy from "../../assets/Buy.png";
+// import img3 from "../../assets/Dextool (1).svg";
+// import ellipse from "../../assets/ellipse.svg";
+// import mobEllipse from "../../assets/mobEllipse.svg";
+// import mobVec1 from "../../assets/mob1.svg";
+// import mobVec2 from "../../assets/mob2.svg";
+// import vector1 from "../../assets/Vector 2.png";
+// import vector2 from "../../assets/Vector 3.png";
+// import dollar1 from "../../assets/dollar1.png";
+// import dollar2 from "../../assets/dollar2.png";
+// import dollar3 from "../../assets/dollar3.png";
+// import slide1 from "../../assets/slide1.png";
+// import slide2 from "../../assets/slider3.png";
+// import slide3 from "../../assets/slide3.png";
+// import slide4 from "../../assets/slide4.png";
+// import buy from "../../assets/Buy.png";
 import copy from "../../assets/copy.svg";
-import footerImg from "../../assets/footerImg.svg";
-import { motion } from "framer-motion";
-import x from "../../assets/X.svg";
-import telegram from "../../assets/TELEGRAM.svg";
+// import footerImg from "../../assets/footerImg.svg";
+// import { motion } from "framer-motion";
+// import x from "../../assets/X.svg";
+// import telegram from "../../assets/TELEGRAM.svg";
 import { useRef, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useMediaQuery } from "react-responsive";
+// import { useInView } from "react-intersection-observer";
+// import { useMediaQuery } from "react-responsive";
+import Slider from "../../components/Slider";
 
-const images = [slide1, slide2, slide3, slide4, slide1, slide2, slide3, slide4];
+// const images = [slide1, slide2, slide3, slide4, slide1, slide2, slide3, slide4];
 
 const Landing = () => {
   const slidingTextRef = useRef<HTMLSpanElement | null>(null);
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
+  // const isDesktop = useMediaQuery({ minWidth: 1024 });
 
-  const { ref: ref1, inView: inView1 } = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
+  // const { ref: ref1, inView: inView1 } = useInView({
+  //   triggerOnce: false,
+  //   threshold: 0.5,
+  // });
 
-  const { ref: ref2, inView: inView2 } = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
+  // const { ref: ref2, inView: inView2 } = useInView({
+  //   triggerOnce: false,
+  //   threshold: 0.5,
+  // });
 
   useEffect(() => {
     if (slidingTextRef.current) {
@@ -104,9 +105,10 @@ const Landing = () => {
           <div className="relative z-[10px]">
             <div className="pt-[50px] lg:pt-[160px] flex justify-center -pb-[40px] relative z-[999]">
               <div className="bg-white -mx-10 flex justify-center p-4 rounded shadow-lg sliding-text-box w-[110%] transform -rotate-5 origin-center border-[#464646] border-[3px] relative z-[999]">
-                <span className="sliding-text py-0 font-bold text-[#464646] text-[14px] lg:text-[50px]">
-                  Meet Workie, the official mascot of the workers on Base. Meet
-                  Workie, the official mascot of the workers on Base.{" "}
+                <span className="sliding-text py-0 font-bold text-[#0D3157] text-[14px] lg:text-[50px]">
+                  EasterEgg EasterEgg EasterEgg EasterEgg EasterEgg EasterEgg
+                  EasterEgg EasterEgg EasterEgg EasterEgg EasterEgg EasterEgg
+                  EasterEgg
                 </span>
               </div>
             </div>
@@ -120,32 +122,27 @@ const Landing = () => {
               />
             </div>
             <div className="flex justify-between flex-col items-center lg:items-start lg:w-1/2 mt-10 min-[1724px]:mt-14 gap-[30px] ">
-              <div className="border-[3px] lg:border-[6px] border-black rounded-[10px] lg:rounded-[28px] bg-white py-2 lg:py-5 px-10 transform rotate-9 lg:rotate-4 origin-center">
+              <div className="border-[3px] lg:border-[6px] border-[#0D3157] rounded-[10px] lg:rounded-[28px] bg-white py-2 lg:py-5 px-10 transform rotate-9 lg:rotate-4 origin-center">
                 <div className="transform lg:-rotate-6 origin-center">
-                  <p className="text-[18px] lg:text-[42px] min-[1724px]:text-[54px] font-[700] text-center transform -rotate-4 lg:rotate-0 origin-center">
+                  <p className="text-[18px] lg:text-[42px] min-[1724px]:text-[54px] font-[700] text-[#0D3157] text-center transform -rotate-4 lg:rotate-0 origin-center">
                     Hello my name is <br />{" "}
                     <span className="text-[44px] lg:text-[95px] min-[1724px]:text-[121px] naughty lg:leading-[100px]">
-                      WORKIE
+                      EasterEgg
                     </span>
                   </p>
                 </div>
               </div>
-              <div className="border-[3px] mt-2 lg:mt-0 lg:border-[6px] border-black rounded-[10px] lg:rounded-[28px] bg-white py-[30px] px-[20px] transform rotate-2 origin-center w-[85%] min-[1724px]:w-[90%]">
+              <div className="border-[3px] mt-2 lg:mt-0 lg:border-[6px] border-[#0D3157] rounded-[10px] lg:rounded-[28px] bg-white py-[30px] px-[20px] transform rotate-2 origin-center w-[85%] min-[1724px]:w-[90%]">
                 <div className="transform -rotate-7 origin-center">
-                  <p className="text-[12px] lg:text-[20px] min-[1724px]:text-[25px] font-[700] text-center">
-                    Workie is more than just a character, it's a social
-                    movement, a state of mind. Being a Workie is nothing to be
-                    ashamed of, it's actually quite the opposite. It's an
-                    important stage in life, giving you a taste of the
-                    thankless, underpaid work that will remind you that you have
-                    to do whatever it takes to get by.
+                  <p className="text-[12px] lg:text-[20px] min-[1724px]:text-[25px] text-[#0D3157] font-[700] text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati iste quibusdam minima deserunt voluptas provident nihil quis sint neque eum velit, temporibus iusto, quod maiores quisquam, fugit sapiente? Numquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quos in quam earum accusantium harum eos voluptates minima commodi? Consequuntur voluptate laudantium ullam vel aliquid magni debitis voluptas molestiae inventore? 
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="roadmap" className="pb-[110px] overflow-hidden">
+        {/* <div id="roadmap" className="pb-[110px] overflow-hidden">
           <h1 className="text-center -mb-[80px] lg:mb-0 text-[65px] lg:text-[200px] naughty lg:leading-[180px]">
             ROADMAP
           </h1>
@@ -332,9 +329,9 @@ const Landing = () => {
               </motion.div>
             </motion.div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="border-[2px] h-[400px] lg:h-[1200px] min-[1724px]:h-[1300px] border-black overflow-hidden bg-white lg:rounded-t-[35px] flex justify-between pl-[10px] lg:pl-[112px] lg:pr-[90px] items-center mb-[56px] lg:mb-[170px] gap-2 relative">
+        {/* <div className="border-[2px] h-[400px] lg:h-[1200px] min-[1724px]:h-[1300px] border-black overflow-hidden bg-white lg:rounded-t-[35px] flex justify-between pl-[10px] lg:pl-[112px] lg:pr-[90px] items-center mb-[56px] lg:mb-[170px] gap-2 relative">
           <img
             src={dollar1}
             alt=""
@@ -436,47 +433,49 @@ const Landing = () => {
               ))}
             </motion.div>{" "}
           </div>
-        </div>
+        </div> */}
 
         <div className="bg-[white] pb-[80px] lg:pb-0">
-          <h1 className="text-center font-[900] naughty text-[#1251FF] min-[1724px]:text-[194px] text-[58px] pt-[60px] lg:pt-0 lg:text-[170px]">
+          <h1 className="text-center font-[900] naughty text-[#0D3157] min-[1724px]:text-[194px] text-[58px] pt-[60px] lg:pt-0 lg:text-[170px]">
             Tokenomics
           </h1>
 
           <div className="flex justify-center items-center w-full">
             <div className="pt-[450px] lg:pt-[190px] pb-[300px] relative w-full">
               <div className="flex justify-center items-center">
-                <img src={buy} alt="" className="w-[250px] lg:w-[520px]" />
+                <img
+                  src={logo}
+                  alt=""
+                  className="w-[250px] lg:w-[520px] rounded-full"
+                />
               </div>
 
-              <div className="bg-white border-black border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform top-[60px] lg:top-[30px] -rotate-5 origin-center comics text-center font-[700] pt-[10px] flex flex-col items-center left-[15px] lg:left-auto lg:right-[520px] lg:w-fit min-[1724px]:right-[600px]">
+              <div className="bg-white border-[#0D3157] border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform top-[60px] lg:top-[30px] -rotate-5 origin-center comics text-center font-[700] pt-[10px] flex flex-col items-center left-[15px] lg:left-auto lg:right-[520px] lg:w-fit min-[1724px]:right-[600px]">
                 <h1 className="text-[14px] lg:text-[22px] min-[1724px]:text-[26px] font-[700] text-[#FF0A0A]">
                   TOTAL SUPPLY
                 </h1>
                 <div className="flex justify-start items-start flex-col lg:pl-4">
-                  <p className="text-left text-[32px] lg:text-[54px] min-[1724px]:text-[63px] font-[900] min-[1724px]:leading-[47px] naughty2 lg:px-4">
+                  <p className="text-left text-[32px] text-[#0D3157] lg:text-[54px] min-[1724px]:text-[63px] font-[900] min-[1724px]:leading-[47px] naughty2 lg:px-4">
                     1,000,000,000{" "}
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white border-black border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform bottom-[20px] lg:bottom-[150px] min-[1724px]:bottom-[100px] -rotate-5 origin-center comics text-center font-[700] pt-[10px] flex flex-col items-center left-[20px] lg:left-[520px] min-[1724px]:left-[640px]">
+              <div className="bg-white border-[#0D3157] border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform bottom-[20px] lg:bottom-[150px] min-[1724px]:bottom-[100px] -rotate-5 origin-center comics text-center font-[700] pt-[10px] flex flex-col items-center left-[20px] lg:left-[520px] min-[1724px]:left-[640px]">
                 <h1 className="text-[14px] lg:text-[22px] min-[1724px]:text-[26px] font-[700] text-[#FF0A0A]">
-                  Contract{" "}
+                  Contract Address{" "}
                 </h1>
                 <div className="flex justify-start items-start flex-col lg:pl-4">
-                  <p className="text-[12px] lg:text-[20px] min-[1724px]:text-[25px] font-[900] min-[1724px]:leading-[47px] naughty2 lg:px-4 text-center ">
-                    0x7480527815ccAE421400Da01E052b12 <br />{" "}
+                  <p className="text-[12px] lg:text-[20px] text-[#0D3157] min-[1724px]:text-[25px] font-[900] min-[1724px]:leading-[47px] naughty2 lg:px-4 text-center ">
+                    000000000000000000000000000000 <br />{" "}
                     <span className="flex justify-center items-center gap-1">
-                      0Cc4255E9
+                      000000000
                       <img
                         src={copy}
                         alt=""
                         className="h-[15px] cursor-pointer"
                         onClick={() => {
-                          navigator.clipboard.writeText(
-                            "0x7480527815ccAE421400Da01E052b120Cc4255E9"
-                          );
+                          navigator.clipboard.writeText("");
                         }}
                       />
                     </span>
@@ -484,32 +483,24 @@ const Landing = () => {
                 </div>
               </div>
 
-              <div className="bg-white border-black border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform top-[220px] lg:top-[400px] min-[1724px]:top-[400px] -rotate-3 origin-center text-center font-[700] pt-[10px] flex flex-col items-center right-[50px] lg:right-auto lg:left-[130px] min-[1724px]:left-[300px] w-[250px] lg:w-[350px]">
-                <h1 className="text-[14px] lg:text-[16px] min-[1724px]:text-[20px] font-[700] text-[#FF0A0A]">
-                  Liquidity pool{" "}
-                </h1>
-                <div className="flex justify-start items-start flex-col lg:pl-4">
-                  <p className="text-[34px] lg:text-[42px] min-[1724px]:text-[50px] font-[900] min- naughty2 lg:px-4 text-center ">
-                    BURNT
-                  </p>
-                </div>
+              <div className="bg-white border-[#0D3157] border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform top-[220px] lg:top-[400px] min-[1724px]:top-[400px] -rotate-3 origin-center text-center font-[700] pt-[10px] flex flex-col items-center right-[50px] lg:right-auto lg:left-[130px] min-[1724px]:left-[300px] w-[250px] lg:w-[350px]">
                 <div className="text-center pt-2 lg:pt-4">
                   <h1 className="text-[14px] lg:text-[16px] min-[1724px]:text-[20px] font-[700] text-[#FF0A0A]">
-                    BUY/SELL TAXES{" "}
+                    tax fees{" "}
                   </h1>
                   <div className="flex flex-col ">
-                    <p className="text-[34px] lg:text-[42px] min-[1724px]:text-[50px] font-[900] min- naughty2 lg:px-4 text-center ">
-                      0/0
+                    <p className="text-[34px] lg:text-[42px] text-[#0D3157] min-[1724px]:text-[50px] font-[900] min- naughty2 lg:px-4 text-center ">
+                      10%
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white border-black border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform bottom-[150px] lg:bottom-0 lg:top-[400px] min-[1724px]:top-[400px] rotate-8 origin-center text-center font-[700] pt-[10px] flex flex-col items-center left-[60px] lg:left-auto lg:right-[120px] min-[1724px]:right-[250px] lg:w-fit h-fit">
+              <div className="bg-white border-[#0D3157] border-[2px] rounded-[10px] absolute shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform bottom-[150px] lg:bottom-0 lg:top-[400px] min-[1724px]:top-[400px] rotate-8 origin-center text-center font-[700] pt-[10px] flex flex-col items-center left-[60px] lg:left-auto lg:right-[120px] min-[1724px]:right-[250px] lg:w-fit h-fit">
                 <h1 className="text-[14px] lg:text-[16px] min-[1724px]:text-[20px] font-[700] text-[#FF0A0A]">
                   OWNERSHIP{" "}
                 </h1>
-                <div className="flex justify-start items-start flex-col lg:pl-4">
+                <div className="flex justify-start items-start text-[#0D3157] flex-col lg:pl-4">
                   <p className="text-[34px] lg:text-[42px] min-[1724px]:text-[50px] font-[900] min- naughty2 lg:px-4 text-center ">
                     RENOUNCED{" "}
                   </p>
@@ -519,7 +510,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="mt-[90px] lg:mt-[170px] relative bg-white mb-[20px] lg:mb-[100px]">
+        {/* <div className="mt-[90px] lg:mt-[170px] relative bg-white mb-[20px] lg:mb-[100px]">
           <div className="absolute w-full">
             <div className="flex justify-center w-full sliding-text-box  transform relative z-[9]">
               <span
@@ -560,7 +551,9 @@ const Landing = () => {
           <div className="lg:relative pt-[350px] lg:pt-0 z-[999] bottom-0 w-full">
             <img src={footerImg} alt="" className="w-full" />
           </div>
-        </div>
+        </div> */}
+
+        <Slider />
       </div>
     </div>
   );
